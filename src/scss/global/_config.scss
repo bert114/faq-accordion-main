@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+$ff: "Work Sans", sans-serif;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+$heading: clamp(1.25rem, 2.5rem + -1.6667vw, 1.875rem);
+$sub-heading: clamp(1.125rem, 2rem + -1.1667vw, 1.5625rem);
+
+:root {
+  --clr-surface: hsl(275, 100%, 97%);
+  --clr-primary: hsl(292, 16%, 49%);
+  --clr-neutral: hsl(292, 42%, 14%);
+}
+
+.dark {
+  --clr-bg: #121212;
+  --clr-text: #ffffff;
+}
+
+.light {
+  --clr-text: #121212;
+  --clr-bg: #ffffff;
+}
+
+$clr-bg: var(--clr-bg);
+$clr-text: var(--clr-bg);

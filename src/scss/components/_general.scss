@@ -1,0 +1,19 @@
+@use "../global/config" as *;
+
+body {
+  background-color: $clr-bg;
+  color: $clr-text;
+  font-family: $ff;
+  font-weight: $regular;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: $heading;
+  font-weight: $semi-bold;
+}
+
+h2 {
+  font-size: $sub-heading;
+  font-size: $semi-bold;
+}

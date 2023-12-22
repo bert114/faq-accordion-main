@@ -14,7 +14,7 @@ $sub-heading: clamp(1.125rem, 2rem + -1.1667vw, 1.5625rem);
   --clr-neutral: hsl(292, 42%, 14%);
 }
 
-.dark {
+.dark-mode {
   --clr-bg: #121212;
   --clr-text: #ffffff;
 }
@@ -25,4 +25,4 @@ $sub-heading: clamp(1.125rem, 2rem + -1.1667vw, 1.5625rem);
 }
 
 $clr-bg: var(--clr-bg);
-$clr-text: var(--clr-bg);
+$clr-text: var(--clr-text);

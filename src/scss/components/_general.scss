@@ -1,4 +1,9 @@
 @use "../global/config" as *;
+@use "../global/icon" as *;
+
+:root {
+  --icon-size: 22px;
+}
 
 body {
   background-color: $clr-bg;
@@ -8,12 +13,54 @@ body {
   font-size: 16px;
 }
 
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-align: initial;
+}
+
+* {
+  transition: all 0.3s;
+}
+
 h1 {
   font-size: $heading;
-  font-weight: $semi-bold;
+  font-weight: $bold;
 }
 
 h2 {
   font-size: $sub-heading;
   font-size: $semi-bold;
+}
+
+.chevron {
+  @include fa-icon-solid($fa-var-plus-circle);
+  color: var(--clr-primary);
+  font-size: var(--icon-size);
+}
+
+.answer {
+  display: none;
+  opacity: 0.7;
+  margin-top: 1.4rem;
+  font-size: 14px;
+}
+
+.container ul {
+  li.active {
+    .answer {
+      display: block;
+      animation: zoomIn 1s;
+    }
+
+    .chevron {
+      @include fa-icon-solid($fa-var-minus-circle);
+      color: var(--clr-primary400);
+    }
+  }
+}
+
+.icon {
+  @include fa-icon-solid($fa-var-star);
 }

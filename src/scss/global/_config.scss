@@ -5,13 +5,13 @@ $regular: 400;
 $semi-bold: 600;
 $bold: 700;
 
-$heading: clamp(1.25rem, 2.5rem + -1.6667vw, 1.875rem);
+$heading: clamp(1.875rem, 0.9821rem + 2.381vw, 3.125rem);
 $sub-heading: clamp(1.125rem, 2rem + -1.1667vw, 1.5625rem);
 
 :root {
   --clr-surface: hsl(275, 100%, 97%);
   --clr-primary: hsl(292, 16%, 49%);
-  --clr-neutral: hsl(292, 42%, 14%);
+  --clr-primary400: hsl(292, 42%, 14%);
 }
 
 .dark-mode {
@@ -19,7 +19,7 @@ $sub-heading: clamp(1.125rem, 2rem + -1.1667vw, 1.5625rem);
   --clr-text: #ffffff;
 }
 
-.light {
+.light-mode {
   --clr-text: #121212;
   --clr-bg: #ffffff;
 }

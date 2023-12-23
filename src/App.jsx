@@ -1,10 +1,21 @@
-import "./react/theme";
 import "./scss/main.scss";
+import "./react/theme";
+import ThemeToggle from "./react/components/themeToggle";
+import { listItem } from "./react/components/accd";
+import "animate.css";
 
 function App() {
   return (
     <>
-      <h1>hi</h1>
+      <main>
+        <div className="container">
+          <div>
+            <span className="icon"></span>
+            <h1>FAQs</h1>
+          </div>
+          <ul>{listItem}</ul>
+        </div>
+      </main>
     </>
   );
 }
